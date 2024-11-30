@@ -26,43 +26,33 @@ const Hero = () => {
                   </div>
                   <div class="section-title style3">
                     <h2 class="title wow fadeInUp" data-wow-delay=".3s">
-                      Drive innovation with
-                      <span>advanced</span>
-                      technology
+                      The trusted
+                      <span> IT partner </span>
+                      for successful & ambitious businesses
                     </h2>
-                    <p class=" wow fadeInUp" data-wow-delay=".3s">
+                    {/* <p class=" wow fadeInUp" data-wow-delay=".3s">
                       {" "}
                       IT company that provides a seamless and intuitive
                       experience for users. The design will focus on clear
                       navigation, easy access{" "}
-                    </p>
+                    </p> */}
                   </div>
                   <div class="btn-wrapper">
                     <a
-                      class="theme-btn wow fadeInUp"
+                      class="theme-btn widebtn wow fadeInUp"
                       href="/"
                       data-wow-delay=".3s"
                     >
-                      Get Started <i class="fa fa-arrow-right"></i>
+                      Arrange a free IT Audit<i class="fa fa-arrow-right"></i>
                     </a>
-                    <div
-                      class="intro_content_info_btn wow fadeInUp"
-                      data-wow-delay=".6s"
+                    <a
+                      class="theme-btn widebtn wow fadeInUp"
+                      href="/"
+                      data-wow-delay=".3s"
                     >
-                      <div class="video-wrap ripple-effect rounded-0">
-                        <a
-                          href="https://www.youtube.com/watch?v=f2Gzr8sAGB8"
-                          class="play-btn popup-video"
-                        >
-                          <img
-                            class="playerImg"
-                            src="assets/images/icon/playerIcon1_1.svg"
-                            alt="icon"
-                          />
-                        </a>
-                      </div>
-                      Watch Video
-                    </div>
+                      Book a meeting<i class="fa fa-arrow-right"></i>
+                    </a>
+                   
                   </div>
                 </div>
               </div>

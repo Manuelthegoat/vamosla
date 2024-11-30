@@ -6528,6 +6528,27 @@ input.main-search-input::placeholder {
     font-size: 30px;
   }
 }
+.about.style1 .about_wrapper .about_content_info .counter_item h4 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37.9px;
+}
+@media (max-width: 991px) {
+  .about.style1 .about_wrapper .about_content_info .counter_item h4 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .about.style1 .about_wrapper .about_content_info .counter_item h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .about.style1 .about_wrapper .about_content_info .counter_item h4 {
+    font-size: 15px;
+  }
+}
 .about.style1 .about_wrapper .about_content_info .btn-wrapper {
   width: max-content;
 }
@@ -9526,7 +9547,7 @@ input.main-search-input::placeholder {
   gap: 30px;
 }
 .features .feature-card .card-itams {
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
   border: 2px solid #444;
   gap: 30px;
