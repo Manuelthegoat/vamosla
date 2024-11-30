@@ -127,7 +127,7 @@ const Footer = () => {
       <div class="container">
         <div class="footer-wrapper d-flex align-items-center justify-content-between">
           <p class="wow fadeInLeft" data-wow-delay=".3s">
-            © Yoursitename 2024 | All Rights Reserved
+            © Junich 2024 | All Rights Reserved
           </p>
           <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
             <li>
