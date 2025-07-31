@@ -11,10 +11,10 @@ const Destination = () => {
                 <h5 class="sub-title">UNCOVER PLACE</h5>
                 <h2 class="section-title">POPULAR DESTINATION</h2>
                 <p>
-                  Experience the heart of Africa! From Lagos beaches to Abuja’s
+                  Experience the heart of the world from Africa to Asia, Europe to North America to South America and more! From Lagos beaches to Abuja’s
                   city life and the rich heritage of places like Calabar and
-                  Kano — Nigeria Accra, Or Kenya offers adventure, culture, and
-                  warm hospitality at every turn.
+                  Kano — Nigeria Accra, London, Dubai, Or Kenya offers adventure, culture, and
+                  warm hospitality at every turn.  
                 </p>
               </div>
             </div>
