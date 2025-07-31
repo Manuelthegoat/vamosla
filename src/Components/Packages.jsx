@@ -4,11 +4,36 @@ const Packages = () => {
   const [flights, setFlights] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // Hardcoded images for each flight package
+  const flightImages = [
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Bole_international_airport.jpg/1200px-Bole_international_airport.jpg",
+    "https://www.gacl.com.gh/wp-content/uploads/2018/11/DJI_0041.jpg",
+    "https://www.ibomair.com/wp-content/uploads/2023/09/Kotoka-Airport-1080x750.jpg"
+  ];
+
+  // WhatsApp number (replace with your actual number)
+  const whatsappNumber = "1234567890"; // Example: "2349012345678" for Nigeria
+
+  const startWhatsAppChat = (flight, isBooking = false) => {
+    const messageType = isBooking ? "Booking" : "Enquiry";
+    const whatsappMessage = 
+      `*Flight ${messageType} Request*\n\n` +
+      `*Airline:* ${flight.airline?.name || "Unknown Airline"}\n` +
+      `*Flight Number:* ${flight.flight?.iata || "N/A"}\n` +
+      `*Route:* ${flight.departure?.airport} (${flight.departure?.iata}) → ${flight.arrival?.airport} (${flight.arrival?.iata})\n` +
+      `*Departure Time:* ${new Date(flight.departure?.scheduled).toLocaleString()}\n` +
+      `*Destination City:* ${flight.arrival?.city || "Unknown"}\n\n` +
+      `I would like to ${isBooking ? "book this flight" : "get more information about this flight"}.`;
+    
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+  };
+
   useEffect(() => {
     const fetchFlights = async () => {
       try {
         const res = await fetch(
-          `http://api.aviationstack.com/v1/flights?access_key=e3e6861d32f3184512478184aa040edb&dep_iata=JFK`
+          `http://api.aviationstack.com/v1/flights?access_key=e3e6861d32f3184512478184aa040edb&dep_iata=LOS`
         );
         const data = await res.json();
         setFlights(data.data?.slice(0, 3) || []);
@@ -48,7 +73,7 @@ const Packages = () => {
                   <figure
                     className="package-image"
                     style={{
-                      "background-image": "url('assets/images/img6.jpg')",
+                      backgroundImage: `url('${flightImages[i]}')`,
                     }}
                   ></figure>
 
@@ -97,20 +122,23 @@ const Packages = () => {
                       <span>${200 + Math.floor(Math.random() * 300)}</span>/ per
                       person
                     </h6>
-                    <a
-                      href="booking.html"
+                    <button
+                      onClick={() => startWhatsAppChat(flight, true)}
                       className="outline-btn outline-btn-white"
                     >
                       Book now
-                    </a>
+                    </button>
                   </div>
                 </article>
               ))
             )}
             <div className="section-btn-wrap text-center">
-              <a href="package.html" className="round-btn">
-                VIEW ALL PACKAGES
-              </a>
+              <button 
+                onClick={() => startWhatsAppChat(flights[0] || {}, false)} 
+                className="round-btn"
+              >
+                Enquire More
+              </button>
             </div>
           </div>
         </div>

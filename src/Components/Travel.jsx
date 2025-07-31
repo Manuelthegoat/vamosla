@@ -1,6 +1,18 @@
 import React from 'react'
 
 const Travel = () => {
+    const startWhatsAppChat = (isPackageInquiry = false) => {
+    // Replace with your actual WhatsApp number (with country code, remove +)
+    const whatsappNumber = "2349137610861"; // Using the number from your header
+    
+    // Custom messages based on button type
+    const whatsappMessage = isPackageInquiry 
+      ? "Hello Vamos La Limited! I'm interested in your travel packages. Can you send me more details?"
+      : "Hello Vamos La Limited! I'd like to learn more about your services.";
+    
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+  };
   return (
     <>
       <section class="home-callback bg-img-fullcallback" style={{"background-image": "url('assets/images/img7.jpg')"}}>
@@ -15,10 +27,10 @@ const Travel = () => {
                               </a>
                            </div>
                            <h2 class="section-title">ARE YOU READY TO TRAVEL? REMEMBER US !!</h2>
-                           <p>Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+                           <p>Discover the world with us. Your trusted partner in unforgettable journeys, smart educational choices, and authentic cultural experiences. Our platform is designed to inspire and assist every kind of explorer, whether you're planning a relaxing getaway, looking into top global study opportunities, or seeking expert hospitality and tour services.</p>
                            <div class="callback-btn">
-                              <a href="package.html" class="round-btn">View Packages</a>
-                              <a href="about.html" class="outline-btn outline-btn-white">Learn More</a>
+                              <a onClick={() => startWhatsAppChat(true)}  class="round-btn">Chat About Packages</a>
+                              <a onClick={() => startWhatsAppChat(false)} class="outline-btn outline-btn-white">Learn More via WhatsApp</a>
                            </div>
                         </div>
                      </div>

@@ -1,19 +1,30 @@
 import React from "react";
 
 const Hero = () => {
+  const startWhatsAppBooking = () => {
+    // Replace with your actual WhatsApp number (with country code, remove +)
+    const whatsappNumber = "2349137610861"; // Using the number from your header
+    
+    // Custom booking message
+    const whatsappMessage = "Hello Vamos La Limited! I'd like to book a service. Please provide more information.";
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+  };
+
   return (
     <>
-      <section class="home-banner-section home-banner-slider">
+      <section className="home-banner-section home-banner-slider">
         <div
-          class="home-banner d-flex flex-wrap align-items-center"
-          style={{ "background-image": "url('assets/images/banner-img1.jpg')" }}
+          className="home-banner d-flex flex-wrap align-items-center"
+          style={{ backgroundImage: "url('assets/images/banner-img1.jpg')" }}
         >
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="banner-content text-center">
-              <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                  <h2 class="banner-title">Welcome to Vamos La Limited</h2>
+          <div className="overlay"></div>
+          <div className="container">
+            <div className="banner-content text-center">
+              <div className="row">
+                <div className="col-lg-8 offset-lg-2">
+                  <h2 className="banner-title">Welcome to Vamos La Limited</h2>
                   <p>
                     a trusted name dedicated to delivering excellence across
                     multiple industries. We take great care in providing
@@ -23,16 +34,16 @@ const Hero = () => {
                     value and build lasting relationships by offering innovative
                     solutions tailored to the needs of our clients.
                   </p>
-                  <div class="banner-btn">
-                    <a href="about" class="round-btn">
+                  <div className="banner-btn">
+                    <a href="about" className="round-btn">
                       LEARN MORE
                     </a>
-                    <a
-                      href="booking"
-                      class="outline-btn outline-btn-white"
+                    <button
+                      onClick={startWhatsAppBooking}
+                      className="outline-btn outline-btn-white"
                     >
                       BOOK NOW
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

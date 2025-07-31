@@ -3,6 +3,22 @@ import React, { useState, useEffect } from "react";
 const Special = () => {
   const [hotels, setHotels] = useState([]);
 
+  const startWhatsAppBooking = (hotel) => {
+    // Replace with your actual WhatsApp number (with country code, remove +)
+    const whatsappNumber = "2349137610861";
+    
+    const whatsappMessage = 
+      `*Hotel Booking Inquiry*\n\n` +
+      `*Package:* ${hotel.title}\n` +
+      `*Location:* ${hotel.location}\n` +
+      `*Duration:* ${hotel.duration}\n` +
+      `*Price:* $${hotel.discountedPrice} (was $${hotel.originalPrice})\n\n` +
+      `I'd like to book this special package. Please assist me.`;
+    
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+  };
+
   useEffect(() => {
     // Mock hotel data
     const mockHotels = [
@@ -99,19 +115,24 @@ const Special = () => {
                       price: <del>${hotel.originalPrice}</del>{" "}
                       <ins>${hotel.discountedPrice}</ins>
                     </div>
-                    <a href="booking.html" className="round-btn">
+                    <button 
+                      onClick={() => startWhatsAppBooking(hotel)} 
+                      className="round-btn"
+                      style={{
+                        cursor: 'pointer',
+                        border: 'none',
+                        background: 'transparent',
+                        color: 'inherit'
+                      }}
+                    >
                       Book Now
-                    </a>
+                    </button>
                   </div>
                 </article>
               </div>
             ))}
           </div>
-          <div className="section-btn-wrap text-center">
-            <a href="package-offer.html" className="round-btn">
-              VIEW ALL PACKAGES
-            </a>
-          </div>
+        
         </div>
       </div>
     </section>

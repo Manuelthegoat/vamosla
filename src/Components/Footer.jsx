@@ -77,7 +77,7 @@ const Footer = () => {
         <div class="bottom-footer">
           <div class="container">
             <div class="copy-right text-center">
-              Copyright &copy; 2022 Traveler. All rights reserved.
+              Copyright &copy; 2025 BY Techmint. All rights reserved.
             </div>
           </div>
         </div>

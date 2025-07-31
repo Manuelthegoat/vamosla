@@ -1,23 +1,44 @@
 import React from "react";
 
 const Discount = () => {
+    const startWhatsAppChat = () => {
+    // Replace with your actual WhatsApp number (with country code, remove +)
+    const whatsappNumber = "2349137610861";
+    
+    const whatsappMessage = 
+      `*Discount Inquiry*\n\n` +
+      `Hello Vamos La Limited!\n\n` +
+      `I saw your special discount offer and would like to:\n` +
+      `- Get more information\n` +
+      `- Claim my chat discount\n` +
+      `- Learn about your services\n\n` +
+      `Please assist me.`;
+    
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+  };
+
   return (
     <>
       <section
         class="home-client client-section"
-        style={{"background-image": "url('assets/images/banner-img1.jpg')"}}
+        style={{ "background-image": "url('assets/images/banner-img1.jpg')" }}
       >
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="client-content">
                 <h5 class="sub-title">DISCOUNT OFFER</h5>
-                <h2 class="section-title">GET SPECIAL DISCOUNT ON SIGN UP !</h2>
+                <h2 class="section-title">GET SPECIAL DISCOUNT WHEN YOU CHAT WITH US !</h2>
                 <p>
-                  Fusce hic augue velit wisi quibusdam pariatur, iusto primis,
-                  nec nemo, rutrum. Vestibulum cumque laudantm sit.
+                  Planning a trip, study abroad, or booking a stay? Chat with
+                  our representative today and get an instant discount on our
+                  travel, education, or hospitality services! 🎁 Exclusive Chat
+                  Offer Includes: Reduced service fees Special package pricing
+                  Priority support and guidance 📲 Start a chat now and unlock
+                  your savings — it’s that easy!
                 </p>
-                <a href="contact.html" class="round-btn">
+                <a onClick={startWhatsAppChat} class="round-btn">
                   Sign Up Now
                 </a>
               </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Travel from "../Components/Travel";
 
 const About = () => {
   return (
@@ -28,7 +29,7 @@ const About = () => {
                       <h3>WE ARE BEST FOR TOURS & TRAVEL SINCE 1985 !</h3>
                     </div>
                   </figure>
-                  <h2>HOW WE ARE BEST FOR TRAVEL !</h2>
+                  <h2>HOW WE ARE BEST FOR TRAVEL & GUIDE TO STUDY ABROAD !</h2>
                   <p>
                     Welcome to Vamos La Limited, a trusted name dedicated to
                     delivering excellence across multiple industries. We take
@@ -59,11 +60,24 @@ const About = () => {
                     <i aria-hidden="true" class="fas fa-umbrella-beach"></i>
                   </div>
                   <div class="icon-box-content">
+                    <h3>UNIVERSITIES AROUND THE WORLD</h3>
+                    <b>
+                      🎓 Our expert advisors help you make confident choices.
+                      We connect you to opportunities that shape your future.
+                    </b>
+                  </div>
+                </div>
+                <div class="icon-box">
+                  <div class="box-icon">
+                    <i aria-hidden="true" class="fas fa-umbrella-beach"></i>
+                  </div>
+                  <div class="icon-box-content">
                     <h3>AFFORDABLE TOURS</h3>
-                    <p>
-                      Iure doloremque saepe? Ultrices mi aliquam dis tempore
-                      incididunt sint, cumque dis temp!
-                    </p>
+                    <b>
+                      Our tours are budget-friendly, well-planned, and packed
+                      with value. Perfect for students, families, and solo
+                      travelers.
+                    </b>
                   </div>
                 </div>
                 <div class="icon-box">
@@ -72,10 +86,11 @@ const About = () => {
                   </div>
                   <div class="icon-box-content">
                     <h3>BEST TOUR GUIDES</h3>
-                    <p>
-                      Iure doloremque saepe? Ultrices mi aliquam dis tempore
-                      incididunt sint, cumque dis temp!
-                    </p>
+                    <b>
+                      Discover more with the best tour guides by your side.
+                      Local experts, rich insights, and personalized
+                      experiences.
+                    </b>
                   </div>
                 </div>
                 <div class="icon-box">
@@ -83,51 +98,12 @@ const About = () => {
                     <i aria-hidden="true" class="fas fa-headset"></i>
                   </div>
                   <div class="icon-box-content">
-                    <h3>AFFORDABLE TOURS</h3>
-                    <p>
-                      Iure doloremque saepe? Ultrices mi aliquam dis tempore
-                      incididunt sint, cumque dis temp!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="bg-img-fullcallback"
-          style={{ "background-image": "url('assets/images/img7.jpg')" }}
-        >
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 offset-lg-2 text-center">
-                <div class="callback-content">
-                  <div class="video-button">
-                    <a
-                      id="video-container"
-                      data-fancybox="video-gallery"
-                      href="https://www.youtube.com/watch?v=2OYar8OHEOU"
-                    >
-                      <i class="fas fa-play"></i>
-                    </a>
-                  </div>
-                  <h2 class="section-title">
-                    ARE YOU READY TO TRAVEL? REMEMBER US !!
-                  </h2>
-                  <p>
-                    Fusce hic augue velit wisi quibusdam pariatur, iusto primis,
-                    nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare
-                    mollitia tenetur, aptent.
-                  </p>
-                  <div class="callback-btn">
-                    <a href="package.html" class="round-btn">
-                      View Packages
-                    </a>
-                    <a href="about.html" class="outline-btn outline-btn-white">
-                      Learn More
-                    </a>
+                    <h3>AFFORDABLE HOTELS</h3>
+                    <b>
+                      Feel at home wherever you go. Our hospitality team ensures
+                      a seamless, comfortable stay. Your comfort is our
+                      priority.
+                    </b>
                   </div>
                 </div>
               </div>
@@ -135,6 +111,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Travel />
     </>
   );
 };
