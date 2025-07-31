@@ -1,156 +1,89 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
     <>
- <footer class="footer-section position-relative">
-    <div class="footer-widgets-wrapper fix">
-      <div class="container">
-        <div class="footer_top-head">
-          <div class="footer-logo">
-            <img src="assets/images/logo/logo.png" alt="logo"/>
-          </div>
-          <div class="btn-wrapper">
-            <a class="theme-btn" href="index#scroll">
-              Scroll Up
-              <i class="fa fa-long-arrow-up"></i>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <h3>Resources</h3>
-              </div>
-              <ul class="list-area">
-                <li>
-                  <a href="/"> Home </a>
-                </li>
-                <li>
-                  <a href="about"> About </a>
-                </li>
-                <li>
-                  <a href="blog"> Blog </a>
-                </li>
-
-                <li>
-                  <a href="contact"> Contact </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <h3>Use cases</h3>
-              </div>
-              <ul class="list-area">
-                <li>
-                  <a href="index#"> Know Your Business </a>
-                </li>
-                <li>
-                  <a href="index#"> TechSphere Solutions </a>
-                </li>
-                <li>
-                  <a href="index#"> Know Your Customer </a>
-                </li>
-                <li>
-                  <a href="index#"> Onboarding </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <h3>Products</h3>
-              </div>
-              <ul class="list-area">
-                <li>
-                  <div class="title">
-                    <a href="index#"> Workflow </a>
+      <footer id="colophon" class="site-footer footer-primary">
+        <div class="top-footer">
+          <div class="container">
+            <div class="lower-footer">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="footer-newsletter">
+                    <p>Subscribe our newsletter for more update & news !!</p>
+                    <form class="newsletter">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                      />
+                      <button
+                        type="submit"
+                        class="outline-btn outline-btn-white"
+                      >
+                        Subscribe
+                      </button>
+                    </form>
                   </div>
-                </li>
-                <li>
-                  <a href="index#"> Orchestration </a>
-                </li>
-                <li>
-                  <a href="index#"> No-code onboarding </a>
-                </li>
-                <li>
-                  <a href="index#"> Reports </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <h3>Developers</h3>
+                </div>
+                <div class="col-lg-6 text-right">
+                  <div class="social-icon">
+                    <ul>
+                      <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.twitter.com/" target="_blank">
+                          <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                          <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                          <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                          <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-menu">
+                    <ul>
+                      <li>
+                        <a href="policy.html">Privacy Policy</a>
+                      </li>
+                      <li>
+                        <a href="policy.html">Term & Condition</a>
+                      </li>
+                      <li>
+                        <a href="faq.html">FAQ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <ul class="list-area">
-                <li>
-                  <a href="about"> Documentation </a>
-                </li>
-                <li>
-                  <a href="services"> API Reference </a>
-                </li>
-                <li>
-                  <h6 class="language">Language</h6>
-                  <select name="lang" id="lang-select" class="nice-select">
-                    <option value="">English</option>
-                    <option value="french">
-                      French
-                    </option>
-                    <option value="spanish">
-                      Spanish
-                    </option>
-                    <option value="chinese">
-                      Chinese
-                    </option>
-                    <option value="arabic">
-                      Arabic
-                    </option>
-                    <option value="portuguese">
-                      Portuguese
-                    </option>
-                  </select>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="footer-wrapper d-flex align-items-center justify-content-between">
-          <p class="wow fadeInLeft" data-wow-delay=".3s">
-            © Junich 2024 | All Rights Reserved
-          </p>
-          <ul class="brand-logo wow fadeInRight" data-wow-delay=".5s">
-            <li>
-              <a href="contact">
-                Privacy <span class="line"> | </span>
-              </a>
-            </li>
-            <li>
-              <a href="contact"> Terms <span class="line"> | </span> </a>
-            </li>
-            <li>
-              <a href="contact"> Sitemap <span class="line"> | </span> </a>
-            </li>
-            <li>
-              <a href="contact"> Help </a>
-            </li>
-          </ul>
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="copy-right text-center">
+              Copyright &copy; 2022 Traveler. All rights reserved.
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </footer>
+      </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

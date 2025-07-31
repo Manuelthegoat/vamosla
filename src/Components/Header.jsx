@@ -3,160 +3,91 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <div class="fix-area">
-        <div class="offcanvas__info">
-          <div class="offcanvas__wrapper">
-            <div class="offcanvas__content">
-              <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                <div class="offcanvas__logo">
-                  <a href="index">
-                    <img src="assets/images/logo.png" alt="logo-img" />
+      <header id="masthead" class="site-header">
+        <div class="top-header">
+          <div class="container">
+            <div class="top-header-inner">
+              <div class="header-contact text-left">
+                <a href="telto:2349137610861">
+                  <i aria-hidden="true" class="icon icon-phone-call2"></i>
+                  <div class="header-contact-details d-none d-sm-block">
+                    <span class="contact-label">For Further Inquires :</span>
+                    <h5 class="header-contact-no">+234 913 761 0861</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="site-logo text-center">
+                <h1 class="site-title">
+                  <a href="/">
+                    <img src="assets/images/logo.png" alt="Logo" />
+                  </a>
+                </h1>
+              </div>
+              <div class="header-icon text-right">
+                <div class="header-search-icon d-inline-block">
+                  <a >
+                    <i aria-hidden="true" class="fas fa-search"></i>
                   </a>
                 </div>
-                <div class="offcanvas__close">
-                  <button>
-                    <i class="fas fa-times"></i>
-                  </button>
+                <div class="offcanvas-menu d-inline-block">
+                  <a >
+                    <i aria-hidden="true" class="icon icon-burger-menu"></i>
+                  </a>
                 </div>
               </div>
-              <p class="text d-none d-xl-block">
-                Nullam dignissim, ante scelerisque the is euismod fermentum odio
-                sem semper the is erat, a feugiat leo urna eget eros. Duis
-                Aenean a imperdiet risus.
-              </p>
-              <div class="mobile-menu fix mb-3"></div>
-              <div class="offcanvas__contact">
-                <h4>Contact Info</h4>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-header">
+          <div class="container">
+            <div class="bottom-header-inner d-flex justify-content-between align-items-center">
+              <div class="header-social social-icon">
                 <ul>
-                  <li class="d-flex align-items-center">
-                    <div class="offcanvas__contact-icon">
-                      <i class="fal fa-map-marker-alt"></i>
-                    </div>
-                    <div class="offcanvas__contact-text">
-                      <a target="_blank" href="index2#">
-                        Main Street, Melbourne, Australia
-                      </a>
-                    </div>
+                  <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
                   </li>
-                  <li class="d-flex align-items-center">
-                    <div class="offcanvas__contact-icon mr-15">
-                      <i class="fal fa-envelope"></i>
-                    </div>
-                    <div class="offcanvas__contact-text">
-                      <a href="mailto:info@example.com">
-                        <span class="mailto:info@example.com">
-                          info@example.com
-                        </span>
-                      </a>
-                    </div>
+                  <li>
+                    <a href="https://www.twitter.com" target="_blank">
+                      <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
                   </li>
-                  <li class="d-flex align-items-center">
-                    <div class="offcanvas__contact-icon mr-15">
-                      <i class="fal fa-clock"></i>
-                    </div>
-                    <div class="offcanvas__contact-text">
-                      <a target="_blank" href="index2#">
-                        Mod-friday, 09am -05pm
-                      </a>
-                    </div>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <div class="offcanvas__contact-icon mr-15">
-                      <i class="far fa-phone"></i>
-                    </div>
-                    <div class="offcanvas__contact-text">
-                      <a href="tel:+11002345909">+11002345909</a>
-                    </div>
+                  <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                      <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
                   </li>
                 </ul>
-                <div class="header-button mt-4">
-                  <a href="contact" class="theme-btn text-center">
-                    <span>
-                      Get A Quote<i class="fa-solid fa-arrow-right-long"></i>
-                    </span>
-                  </a>
-                </div>
-                <div class="social-icon d-flex align-items-center">
-                  <a href="index2#">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="index2#">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="index2#">
-                    <i class="fab fa-youtube"></i>
-                  </a>
-                  <a href="index2#">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
+              </div>
+              <div class="navigation-container d-none d-lg-block">
+                <nav id="navigation" class="navigation">
+                  <ul>
+                    <li class="menu-active">
+                      <a href="/">Home</a>
+                    </li>
+                    <li>
+                      <a href="/about">about us</a>
+                    </li>
+                    <li>
+                      <a href="/destination">destination</a>
+                    </li>
+
+                    <li>
+                      <a href="/contact">contact us</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header-btn">
+                <a href="booking" class="round-btn">
+                   Chat with Us
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="offcanvas__overlay"></div>
-
-      <header class="header-section-1" id="scroll">
-        <div id="header-sticky" class="header-1">
-          <div class="container">
-            <div class="mega-menu-wrapper">
-              <div class="header-main">
-                <div class="header-left">
-                  <div class="logo">
-                    <a href="index" class="header-logo">
-                      <img
-                        src="assets/images/logo.png"
-                        alt="logo-img"
-                        width="100"
-                      />
-                    </a>
-                  </div>
-                </div>
-                <div class="header-middle">
-                  <div class="mean__menu-wrapper">
-                    <div class="main-menu">
-                      <nav id="mobile-menu">
-                        <ul>
-                          <li>
-                            <a href="/">Home</a>
-                          </li>
-                          <li>
-                            <a href="/about">About Us</a>
-                          </li>
-                          <li>
-                            <a href="/services">Services</a>
-                          </li>
-                          <li>
-                            <a href="/projects">Projects</a>
-                          </li>
-
-                          <li>
-                            <a href="contact">Contact</a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-                <div class="header-right d-flex justify-content-end align-items-center">
-                  <div class="header-button">
-                    <div class="btn-wrapper">
-                      <a href="contact">
-                        <span class="theme-btn"> Contact Us </span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="header__hamburger d-block d-xl-none my-auto">
-                    <div class="sidebar__toggle">
-                      <i class="fas fa-bars"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="mobile-menu-container"></div>
       </header>
     </>
   );
