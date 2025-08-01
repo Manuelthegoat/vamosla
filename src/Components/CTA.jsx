@@ -26,7 +26,7 @@ const CTA = () => {
                   <div class="row align-items-center">
                      <div class="col-md-8">
                         <h5 class="sub-title">CALL TO ACTION</h5>
-                        <h2 class="section-title">READY FOR AN UNFORGETABLE TRAVEL. REMEMBER US!</h2>
+                        <h2 class="section-title">READY FOR A REMARKABLE GROWTH? REMEMBER US!</h2>
                      </div>
                      <div class="col-md-4 text-md-end">
                         <a onClick={startWhatsAppChat} class="outline-btn outline-btn-white">Contact Us !</a>
