@@ -32,7 +32,7 @@ const Banner = () => {
     const encodedMessage = encodeURIComponent(whatsappMessage);
     
     // Replace with your actual WhatsApp number (with country code, remove +)
-    const whatsappNumber = "1234567890";
+    const whatsappNumber = "2349137610861";
     
     // Open WhatsApp chat
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');

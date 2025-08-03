@@ -12,7 +12,7 @@ const Packages = () => {
   ];
 
   // WhatsApp number (replace with your actual number)
-  const whatsappNumber = "1234567890"; // Example: "2349012345678" for Nigeria
+  const whatsappNumber = "2349137610861"; // Example: "2349012345678" for Nigeria
 
   const startWhatsAppChat = (flight, isBooking = false) => {
     const messageType = isBooking ? "Booking" : "Enquiry";
