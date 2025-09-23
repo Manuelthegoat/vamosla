@@ -929,7 +929,7 @@ input[type=submit]:focus {
 }
 
 .round-btn {
-  background-color: #501790;
+  background-color: #c2881e;
   border: none;
   color: #ffffff;
   display: inline-block;
@@ -941,7 +941,7 @@ input[type=submit]:focus {
   transition: background-color 0.3s;
 }
 .round-btn:hover, .round-btn:focus, .round-btn:active {
-  background-color: #c2881e;
+  background-color: #501790;
   color: #ffffff;
 }
 
@@ -1033,7 +1033,7 @@ input[type=submit]:focus {
 }
 
 .primary-bg {
-  background-color: #501790;
+  background-color: #c2881e;
 }
 
 .primary-color {

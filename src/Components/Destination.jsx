@@ -25,7 +25,7 @@ const Destination = () => {
                 <article
                   class="destination-item"
                   style={{
-                    "background-image": "url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Kanogate.jpg/1200px-Kanogate.jpg')",
+                    "background-image": "url('https://vagabundler.com/wp-content/uploads/2019/06/P3160164-Copy.jpg')",
                   }}
                 >
                   <div class="destination-content">
@@ -35,13 +35,13 @@ const Destination = () => {
                       </div>
                     </div>
                     <span class="cat-link">
-                      <a href="destination.html">Nigeria</a>
+                      <a href="destination.html">France</a>
                     </span>
                     <h3>
-                      <a href="package-detail.html">Kano</a>
+                      <a href="package-detail.html">Paris</a>
                     </h3>
                     <p>
-                      Kano is the second largest city in Nigeria after Lagos
+                     Symbol of Paris recognized all over the world.
                     </p>
                   </div>
                 </article>
