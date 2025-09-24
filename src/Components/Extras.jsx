@@ -109,7 +109,7 @@ const Extras = () => {
               </div>
             </aside>
           </div>
-          <a class="offcanvas-close">
+          <a class="offcanvas-close" onClick={() => window.location.reload()}>
             <i class="fas fa-times"></i>
           </a>
         </div>
