@@ -119,7 +119,7 @@ const Packages = () => {
                       </div>
                     </div>
                     <h6 className="price-list">
-                      <span>${200 + Math.floor(Math.random() * 300)}</span>/ per
+                      <span>₦{200 + Math.floor(Math.random() * 300)}</span>/ per
                       person
                     </h6>
                     <button

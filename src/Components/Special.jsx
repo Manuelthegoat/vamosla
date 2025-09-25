@@ -93,7 +93,7 @@ const Special = () => {
                   </div>
                   <div className="offer-content">
                     <div className="package-meta">
-                      <ul style={{ listStyle: "none", padding: 0 }}>
+                      <ul style={{ listStyle: "none", padding: 0, color: "black" }}>
                         <li>
                           <i className="fas fa-clock"></i> {hotel.duration}
                         </li>
@@ -106,14 +106,14 @@ const Special = () => {
                       </ul>
                     </div>
                     <h3>
-                      <a href="#" style={{ color: "white", textDecoration: "underline" }}>
+                      <a href="#" style={{  textDecoration: "underline" }}>
                         {hotel.title}
                       </a>
                     </h3>
-                    <p>{hotel.description}</p>
+                    <p style={{  color: "black" }}>{hotel.description}</p>
                     <div className="price-list">
-                      price: <del>${hotel.originalPrice}</del>{" "}
-                      <ins>${hotel.discountedPrice}</ins>
+                     <del>₦{(hotel.originalPrice*1550).toLocaleString()}</del>{" "}
+                      <ins>₦{(hotel.discountedPrice*1550).toLocaleString()}</ins>
                     </div>
                     <button 
                       onClick={() => startWhatsAppBooking(hotel)} 
@@ -121,7 +121,6 @@ const Special = () => {
                       style={{
                         cursor: 'pointer',
                         border: 'none',
-                        background: 'transparent',
                         color: 'inherit'
                       }}
                     >
